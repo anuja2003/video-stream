@@ -47,12 +47,12 @@
         "GROUP_SUPPORT": {
             "description": "if you have group, then fill the group username here without @",
             "required": true,
-            "value": "https://t.me/Miusicworldchat"
+            "value": "Miusicworldchat"
         },
         "UPDATES_CHANNEL": {
             "description": "if you have channel, then fill the channel username here without @",
             "required": true,
-            "value": "https://t.me/httpMUSICWorld"
+            "value": "MUSICWorld"
         },
         "OWNER_NAME": {
             "description": "fill with your telegram account username without @",
