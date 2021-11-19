@@ -1,4 +1,4 @@
-<p align="center"><a href="https://t.me/Lizamusickbot"><img src="https://github.com/levina-lab/video-stream/raw/main/driver/veezlogo.png"></a></p>
+<p align="center"><a href="https://t.me/Lizamusickbot"><img src="https://telegra.ph/file/22c2e36ca312797b74ec5.jpg"></a></p>
 <p align="center">
     <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
