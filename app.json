@@ -57,7 +57,7 @@
         "OWNER_NAME": {
             "description": "fill with your telegram account username without @",
             "required": true,
-            "value": "mrushan"
+            "value": "mrushansubhagya"
         },
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
