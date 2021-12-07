@@ -154,10 +154,10 @@ async def new_chat(c: Client, m: Message):
                     [
                         [
                             InlineKeyboardButton("📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/{GROUP_SUPPORT}")
+                            InlineKeyboardButton("👥  Group", url=f"https://t.me/{GROUP_SUPPORT}")
                         ],
                         [
-                            InlineKeyboardButton("👤 Assistant", url=f"https://t.me/{ass_uname}")
+                            InlineKeyboardButton("🔥 Owner", url=f"https://t.me/{OWNER_NAME}")
                         ]
                     ]
                 )
