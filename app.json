@@ -1,7 +1,7 @@
 {
-    "name": "LIZA x Music Stream Bot",
+    "name": " Music Stream Bot",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
-    "logo": "https://telegra.ph/file/22c2e36ca312797b74ec5.jpg",
+    "logo": "https://telegra.ph/file/e79fcbac40874cd40ca28.jpg",
     "keywords": [
         "pytgcalls",
         "telegram bot",
@@ -52,17 +52,17 @@
         "UPDATES_CHANNEL": {
             "description": "if you have channel, then fill the channel username here without @",
             "required": true,
-            "value": "httpMUSICWorld"
+            "value": "MUSICWorldanu"
         },
         "OWNER_NAME": {
             "description": "fill with your telegram account username without @",
             "required": true,
-            "value": "mrushansubhagya"
+            "value": "Anujasupulsara"
         },
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
             "required": true,
-            "value": "MRSLIZA"
+            "value": "Aleeza"
         }
     },
     "addons": [],
