@@ -12,6 +12,7 @@ from config import (
     UPDATES_CHANNEL,
 )
 from program import __version__
+from driver.veez import user
 from driver.filters import command, other_filters
 from pyrogram import Client, filters
 from pyrogram import __version__ as pyrover
@@ -57,7 +58,7 @@ async def start_(client: Client, message: Message):
 
 💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
 
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**
+🎯 **To know how to use this bot, please click on the » ❓ Basic Guide button!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -69,8 +70,8 @@ async def start_(client: Client, message: Message):
                 ],
                 [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ Owner", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("🎯 Commands", callback_data="cbcmds"),
+                    InlineKeyboardButton("🔥 Owner", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
@@ -82,7 +83,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/Mrushan2021/video-stream.git"
+                        "🎲 Source Code 🎲", url="https://github.com/Anuja2003"
                     )
                 ],
             ]
@@ -137,3 +138,27 @@ async def get_uptime(client: Client, message: Message):
         f"• **uptime:** `{uptime}`\n"
         f"• **start time:** `{START_TIME_ISO}`"
     )
+
+
+@Client.on_message(filters.new_chat_members)
+async def new_chat(c: Client, m: Message):
+    ass_uname = (await user.get_me()).username
+    bot_id = (await c.get_me()).id
+    for member in m.new_chat_members:
+        if member.id == bot_id:
+            return await m.reply(
+                "❤️ **Thanks for adding me to the Group !**\n\n"
+                "**Promote me as administrator of the Group, otherwise I will not be able to work properly, and don't forget to type /userbotjoin for invite the assistant.**\n\n"
+                "**Once done, type** /reload",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton("💭 Support", url=f"https://t.me/{GROUP_SUPPORT}")
+                        ],
+                        [
+                            InlineKeyboardButton("👤 Assistant", url=f"https://t.me/{ass_uname}")
+                        ]
+                    ]
+                )
+            )
